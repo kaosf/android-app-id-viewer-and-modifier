@@ -12,6 +12,6 @@ sed -e "s/com.example.app/$APP_ID/" -i src/com/example/app/MainActivity.java
 sed -e "s/com.example.app/$APP_ID/" -i AndroidManifest.xml
 sed -e "s/com.example.app/$APP_ID/" -i res/values/strings.xml
 
-mv src/com/example/app src/com/example/$3
-mv src/com/example     src/com/$2
-mv src/com             src/$1
+if [ ! -d src/com/example/$3 ]; then mv src/com/example/app src/com/example/$3; fi
+if [ ! -d src/com/$2 ];         then mv src/com/example     src/com/$2;         fi
+if [ ! -d src/$1 ];             then mv src/com             src/$1;             fi
