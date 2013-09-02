@@ -8,7 +8,10 @@ fi
 
 APP_ID="$1.$2.$3"
 
-sed -e "s/com.example.app/$APP_ID/" -i src/com/example/app/MainActivity.java
+for javafile in $(ls src/com/example/app/*.java)
+do
+  sed -e "s/com.example.app/$APP_ID/" -i $javafile
+done
 sed -e "s/com.example.app/$APP_ID/" -i AndroidManifest.xml
 
 if [ ! -d src/com/example/$3 ]; then mv src/com/example/app src/com/example/$3; fi
