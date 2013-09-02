@@ -3,6 +3,6 @@
 
     <string name="app_name">App ID Viewer</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">\"net.kaosfield.app\"</string>
+    <string name="hello_world">\"com.example.app\"</string>
 
 </resources>
