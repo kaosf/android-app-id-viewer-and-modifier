@@ -6,13 +6,13 @@ Display App ID in MainActivity.
 
 ## Usage
 
-This App ID is `net.kaosfield.app` defaultly. Change it to `com.example.app` with a following command;
+This App ID is `com.example.app` defaultly. Change it to `net.kaosfield.awesomeapp` with a following command;
 
 ```sh
-./rename.sh com example app
+./rename.sh net kaosfield awesomeapp
 ```
 
-Application ID will be changed to `com.example.app` and some others (e.g. the structure of directories, res/values/strings.xml) also be modified.
+Application ID will be changed to `net.kaosfield.awesomeapp` and the structure of directories also be modified.
 
 Undo feature is implemented as `undo.sh`, but it is too naive (git command is required).
 
