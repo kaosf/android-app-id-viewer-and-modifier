@@ -1,5 +1,7 @@
 # App ID Viewer (Empty App)
 
+Version 1.0.0
+
 Display App ID in MainActivity.
 
 ...Now, you can change it very easily.
